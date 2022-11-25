@@ -63,12 +63,11 @@ class Ship {
   }
 
   handleKeyPress() {
-    if (keyDown === "space")
+    // if (keyDown === "space")
     // you only need to use this if you are doing the extra for experts...
     // if you are, you should make a bullet if the space key was pressed
   }
 }
-
 // ------------------------------------------------------------------------- //
 
 // Extra for Experts 
@@ -81,7 +80,9 @@ class Bullet {
   constructor(x, y, dx, dy, theImage) {
     this.x = x; 
     this.y = y; 
-    this.
+    this.dx = 5;
+    this.dy = 5;
+    this.img = theImage;
   }
 
   update() {
