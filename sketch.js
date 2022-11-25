@@ -36,13 +36,26 @@ class Ship {
   constructor(x, y, theImage) {
     this.x = x; 
     this.y = y; 
-    this.img = theImage; 
+    this.img = theImage;
+    this.speed = 5; 
   }
 
   update() {
-    
+    if (keyIsDown(87)) { //w
+      this.y -= this.speed;
+    }
+    if (keyIsDown(83)) { //s
+      this.y += this.speed;
+    }
+    if (keyIsDown(68)) { //d
+      this.x += this.speed;
+    }
+    if (keyIsDown(65)) { //a
+      this.x -= this.speed;
+    }
 
     // if doing extra for experts, show bullet(s)
+
   }
 
   display() {
@@ -50,6 +63,7 @@ class Ship {
   }
 
   handleKeyPress() {
+    if (keyDown === "space")
     // you only need to use this if you are doing the extra for experts...
     // if you are, you should make a bullet if the space key was pressed
   }
@@ -65,7 +79,9 @@ class Ship {
 
 class Bullet {
   constructor(x, y, dx, dy, theImage) {
-    // define the variables needed for the bullet here
+    this.x = x; 
+    this.y = y; 
+    this.
   }
 
   update() {
