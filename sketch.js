@@ -34,17 +34,19 @@ function keyPressed() {
 
 class Ship {
   constructor(x, y, theImage) {
-    // define the variables needed for this ship
+    this.x = x; 
+    this.y = y; 
+    this.img = theImage; 
   }
 
   update() {
-    // move ship -- you might want to use the keyIsDown() function here
+    
 
     // if doing extra for experts, show bullet(s)
   }
 
   display() {
-    // show the ship
+    image(this.img, this.x, this.y); 
   }
 
   handleKeyPress() {
