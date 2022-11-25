@@ -37,6 +37,7 @@ class Ship {
     this.x = x;
     this.y = y;
     this.img = theImage;
+    this.imgWidth = 100; 
   }
   update() {
     // move ship -- you might want to use the keyIsDown() function here
@@ -44,14 +45,13 @@ class Ship {
     // if doing extra for experts, show bullet(s)
   }
   display() {
-    image(this.img, this.x, this.y);
+    image(this.img, this.x, this.y, );
   }
   handleKeyPress() {
     // you only need to use this if you are doing the extra for experts...
     // if you are, you should make a bullet if the space key was pressed
   }
 }
-
 // ------------------------------------------------------------------------- //
 
 // Extra for Experts 
