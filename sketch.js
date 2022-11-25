@@ -63,8 +63,10 @@ class Ship {
   }
 
   handleKeyPress() {
-    let someBullet = new Bullet(bulletImage);
-    newBullets.push(someBullet);
+    if (keyPressed("SPACE_BAR")){
+      let someBullet = new Bullet(bulletImage);
+      newBullets.push(someBullet);
+    }
   }
 }
 let newBullets = []; 
@@ -87,11 +89,11 @@ class Bullet {
   }
 
   update() {
-    // what does the bullet need to do during each frame? how do we know if it is off screen?
+    this.y --; 
   }
 
   display() {
-
+    image(this.img, this.x, this.y); 
   }
 
   isOnScreen() {
