@@ -63,8 +63,8 @@ class Ship {
   }
 
   handleKeyPress() {
-    let someBullet = new Bullet(bulletImg);
-   bullets.push(someBullet);
+    let someBullet = new Bullet(bulletImage);
+    newBullets.push(someBullet);
   }
 }
 let newBullets = []; 
@@ -79,8 +79,8 @@ let newBullets = [];
 
 class Bullet {
   constructor(x, y, dx, dy, theImage) {
-    this.x = x; 
-    this.y = y; 
+    this.x = enterprise.x; 
+    this.y = enterprise.y; 
     this.dx = 5;
     this.dy = 5;
     this.img = theImage;
@@ -91,7 +91,7 @@ class Bullet {
   }
 
   display() {
-    // show the bullet
+
   }
 
   isOnScreen() {
