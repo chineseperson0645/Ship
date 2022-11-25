@@ -38,6 +38,7 @@ class Ship {
     this.y = y;
     this.img = theImage;
     this.imgWidth = 100; 
+    this.imgHeight = 100;
   }
   update() {
     // move ship -- you might want to use the keyIsDown() function here
@@ -45,7 +46,7 @@ class Ship {
     // if doing extra for experts, show bullet(s)
   }
   display() {
-    image(this.img, this.x, this.y, );
+    image(this.img, this.x, this.y, this.imgWidth, this.imgHeight);
   }
   handleKeyPress() {
     // you only need to use this if you are doing the extra for experts...
