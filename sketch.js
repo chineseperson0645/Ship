@@ -63,11 +63,12 @@ class Ship {
   }
 
   handleKeyPress() {
-    // if (keyDown === "space")
-    // you only need to use this if you are doing the extra for experts...
-    // if you are, you should make a bullet if the space key was pressed
+    let someBullet = new Bullet(bulletImg);
+   bullets.push(someBullet);
   }
 }
+let newBullets = []; 
+
 // ------------------------------------------------------------------------- //
 
 // Extra for Experts 
